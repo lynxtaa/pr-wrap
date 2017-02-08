@@ -1,0 +1,19 @@
+{
+  "name": "promisify",
+  "version": "1.0.0",
+  "description": "Wraps callback-based methods in promises",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lynxtaa/promisify.git"
+  },
+  "author": "Lynxtaa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lynxtaa/promisify/issues"
+  },
+  "homepage": "https://github.com/lynxtaa/promisify#readme"
+}
