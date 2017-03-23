@@ -1,6 +1,6 @@
 {
   "name": "promisify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Wraps callback-based methods in promises",
   "main": "index.js",
   "scripts": {
@@ -10,10 +10,14 @@
     "type": "git",
     "url": "git+https://github.com/lynxtaa/promisify.git"
   },
-  "author": "Lynxtaa",
+  "author": "Alex Kondratyuk <lynxtaa@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/lynxtaa/promisify/issues"
   },
-  "homepage": "https://github.com/lynxtaa/promisify#readme"
+  "homepage": "https://github.com/lynxtaa/promisify#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
 }
