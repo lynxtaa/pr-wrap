@@ -1,5 +1,5 @@
 const {expect} = require('chai')
-const promisify = require('../index')
+const prWrap = require('../index')
 
 const cbModule = {
 	value: 1,
@@ -18,7 +18,7 @@ const cbModule = {
 
 describe('Test single function', () => {
 	it('fullfills promise', done => {
-		promisify(cbModule.asyncNumber)(5)
+		prWrap(cbModule.asyncNumber)(5)
 			.then(result => {
 				expect(result).to.equal(5)
 				done()
@@ -27,7 +27,7 @@ describe('Test single function', () => {
 	})
 
 	it('rejects promise', done => {
-		promisify(cbModule.asyncNumber)(null)
+		prWrap(cbModule.asyncNumber)(null)
 			.then(done)
 			.catch(err => {
 				expect(err.message).to.equal('Not a Number')
@@ -36,7 +36,7 @@ describe('Test single function', () => {
 	})
 
 	it('preserves context', done => {
-		promisify(cbModule.asyncWithContext, cbModule)()
+		prWrap(cbModule.asyncWithContext, cbModule)()
 			.then(result => {
 				expect(result).to.equal(cbModule.value)
 				done()
@@ -46,7 +46,7 @@ describe('Test single function', () => {
 })
 
 describe('Test proxy object', () => {
-	const prModule = promisify.all(cbModule)
+	const prModule = prWrap.all(cbModule)
 
 	it('fullfills promise', done => {
 		prModule.asyncNumber(5)

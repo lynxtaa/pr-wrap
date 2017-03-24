@@ -1,21 +1,22 @@
 {
-  "name": "promisify",
+  "name": "pr-wrap",
   "version": "1.0.1",
   "description": "Wraps callback-based methods in promises",
   "main": "index.js",
+  "keywords": ["es6", "proxy", "promisify", "promise", "promisifyAll"],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lynxtaa/promisify.git"
+    "url": "git+https://github.com/lynxtaa/pr-wrap.git"
   },
   "author": "Alex Kondratyuk <lynxtaa@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lynxtaa/promisify/issues"
+    "url": "https://github.com/lynxtaa/pr-wrap/issues"
   },
-  "homepage": "https://github.com/lynxtaa/promisify#readme",
+  "homepage": "https://github.com/lynxtaa/pr-wrap#readme",
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^3.2.0"
