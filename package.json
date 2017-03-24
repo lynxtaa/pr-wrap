@@ -1,9 +1,15 @@
 {
   "name": "pr-wrap",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Wraps callback-based methods in promises",
   "main": "index.js",
-  "keywords": ["es6", "proxy", "promisify", "promise", "promisifyAll"],
+  "keywords": [
+    "es6",
+    "proxy",
+    "promisify",
+    "promise",
+    "promisifyAll"
+  ],
   "scripts": {
     "test": "mocha"
   },
