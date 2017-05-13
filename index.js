@@ -4,7 +4,7 @@ const promisify = (fn, context) => (...args) => new Promise((resolve, reject) =>
 })
 
 promisify.all = srcObj => new Proxy(srcObj, {
-	get(target, key, context) {
+	get(target, key) {
 		return promisify(target[key], target)
 	}
 })
