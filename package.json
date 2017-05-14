@@ -1,6 +1,6 @@
 {
   "name": "pr-wrap",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Wraps callback-based methods in promises",
   "main": "index.js",
   "files": [
